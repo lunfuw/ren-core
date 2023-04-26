@@ -6,7 +6,7 @@
     <parent>
         <artifactId>spring-boot-dependencies</artifactId>
         <groupId>org.springframework.boot</groupId>
-        <version>2.7.11</version>
+        <version>3.0.6</version>
         <relativePath/>
     </parent>
     <groupId>com.ren</groupId>
@@ -14,12 +14,12 @@
     <version>0.0.1</version>
     <name>ren-core</name>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <spring.version>6.0.8</spring.version>
         <lombok.version>1.18.18</lombok.version>
-        <spring.boot.version>2.7.11</spring.boot.version>
+        <spring.boot.version>3.0.6</spring.boot.version>
         <spring.web.version>6.0.8</spring.web.version>
-        <fasterxml.jackson.version>2.12.7.1</fasterxml.jackson.version>
+        <fasterxml.jackson.version>2.14.2</fasterxml.jackson.version>
         <mybatis.plus.extension.version>3.5.3.1</mybatis.plus.extension.version>
         <maven.plugin.version>3.8.1</maven.plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
