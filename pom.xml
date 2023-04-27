@@ -16,7 +16,7 @@
     <properties>
         <java.version>17</java.version>
         <spring.version>6.0.8</spring.version>
-        <lombok.version>1.18.18</lombok.version>
+        <lombok.version>1.18.26</lombok.version>
         <spring.boot.version>3.0.6</spring.boot.version>
         <spring.web.version>6.0.8</spring.web.version>
         <fasterxml.jackson.version>2.14.2</fasterxml.jackson.version>
@@ -30,12 +30,17 @@
         <swagger.annotations.version>1.6.2</swagger.annotations.version>
         <spring.data.redis.version>2.4.1</spring.data.redis.version>
         <fastjson.version>1.2.83</fastjson.version>
+        <tomcat.embed.core.version>9.0.73</tomcat.embed.core.version>
+        <jakarta.servlet.version>6.0.0</jakarta.servlet.version>
     </properties>
     <dependencies>
         <!-- tomcat 核心包 -->
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
+            <version>${tomcat.embed.core.version}</version>
+            <scope>compile</scope>
+            <optional>true</optional>
         </dependency>
         <!-- spring 相关 -->
         <dependency>
@@ -48,13 +53,13 @@
             <artifactId>spring-web</artifactId>
             <version>${spring.web.version}</version>
         </dependency>
-        <!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -110,6 +115,14 @@
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>${jakarta.servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>${project.name}</finalName>

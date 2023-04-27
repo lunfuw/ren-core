@@ -56,18 +56,17 @@ public interface RenConstant {
     String LOG_NORMAL_TYPE = "日志";
     String EVENT_LOG = "日志";
     /**
-     * grant_type password
+     * 通用类型密码
      */
     String GRANT_TYPE_HEADER_KEY_PASSWORD = "password";
 
     /**
-     * grant_type captcha
+     * 通用类型验证码
      */
     String GRANT_TYPE_HEADER_KEY_CAPTCHA = "captcha";
 
     /**
      * 业务系统使用 验证方式
-     * grant_type business
      */
     String GRANT_TYPE_HEADER_KEY_BLOG = "blog";
 
